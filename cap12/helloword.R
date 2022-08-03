@@ -33,38 +33,12 @@ print(modacusto)
 
 
 #Criando grafico de media
-install.packages("ggplot2")
+#install.packages("ggplot2")
 library(ggplot2)
 
 #Criar grafico
 ggplot(vendas) + 
   stat_summary(aes(x = Estado, y = Valor), fun = mean, geom = "bar") + 
   labs(title = "Média de Valor Por Estado ")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
